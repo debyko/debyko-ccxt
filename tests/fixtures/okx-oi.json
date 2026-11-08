@@ -1,0 +1,204 @@
+{
+  "evaluated_at": "2026-11-08T17:18:40.260Z",
+  "served_at": "2026-11-08T17:18:40.260000Z",
+  "receipt_id": "5oTWqRqKmdGmGFiJWr8T7i",
+  "settled": true,
+  "items_sha256": "62de68f7e3ebb33a9f2a64421d3d19e540a23d984ec1c5257dc9f3f9dd7af127",
+  "mode": "interval",
+  "interval": "5m",
+  "from": "2026-11-08T15:00:00Z",
+  "to": "2026-11-08T16:00:00Z",
+  "units": "published",
+  "freshness": {
+    "oi": null
+  },
+  "capabilities_as_of": "2026-11-08T17:18:30.020Z",
+  "items": [
+    {
+      "instrument": "BTC-PERP",
+      "venue": "OKX-PERP",
+      "kind": "perpetual",
+      "venue_symbol": "BTC-USDT-SWAP",
+      "quote": "USDT",
+      "identity_basis": "reconstructed",
+      "layers": {
+        "oi": {
+          "retention_from": "2026-09-30T21:54:46.811Z",
+          "units": {
+            "oi": "contracts"
+          },
+          "rows": [
+            {
+              "bucket_end": "2026-11-08T15:05:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:04:48.003Z",
+              "received_at": "2026-11-08T15:04:48.140Z",
+              "values": {
+                "oi": "34664.1824000001532"
+              }
+            },
+            {
+              "bucket_end": "2026-11-08T15:10:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:09:52.030Z",
+              "received_at": "2026-11-08T15:09:52.167Z",
+              "values": {
+                "oi": "34643.6800000001516"
+              }
+            },
+            {
+              "bucket_end": "2026-11-08T15:15:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:14:56.355Z",
+              "received_at": "2026-11-08T15:14:56.494Z",
+              "values": {
+                "oi": "34622.5441000001479"
+              }
+            },
+            {
+              "bucket_end": "2026-11-08T15:20:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:19:51.889Z",
+              "received_at": "2026-11-08T15:19:52.028Z",
+              "values": {
+                "oi": "34615.03740000015"
+              }
+            },
+            {
+              "bucket_end": "2026-11-08T15:25:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:24:55.836Z",
+              "received_at": "2026-11-08T15:24:55.974Z",
+              "values": {
+                "oi": "34614.7204000001492"
+              }
+            },
+            {
+              "bucket_end": "2026-11-08T15:30:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:29:54.418Z",
+              "received_at": "2026-11-08T15:29:54.556Z",
+              "values": {
+                "oi": "34608.4319000001497"
+              }
+            },
+            {
+              "bucket_end": "2026-11-08T15:35:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:34:59.847Z",
+              "received_at": "2026-11-08T15:34:59.985Z",
+              "values": {
+                "oi": "34602.0945000001453"
+              }
+            },
+            {
+              "bucket_end": "2026-11-08T15:40:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:39:47.842Z",
+              "received_at": "2026-11-08T15:39:47.980Z",
+              "values": {
+                "oi": "34601.7234000001447"
+              }
+            },
+            {
+              "bucket_end": "2026-11-08T15:45:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:44:51.886Z",
+              "received_at": "2026-11-08T15:44:52.024Z",
+              "values": {
+                "oi": "34608.6353000001445"
+              }
+            },
+            {
+              "bucket_end": "2026-11-08T15:50:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:49:54.436Z",
+              "received_at": "2026-11-08T15:49:54.573Z",
+              "values": {
+                "oi": "34605.0961000001421"
+              }
+            },
+            {
+              "bucket_end": "2026-11-08T15:55:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:54:58.408Z",
+              "received_at": "2026-11-08T15:54:58.546Z",
+              "values": {
+                "oi": "34606.9057000001409"
+              }
+            },
+            {
+              "bucket_end": "2026-11-08T16:00:00Z",
+              "instrument": "BTC-PERP",
+              "base": "BTC",
+              "quote": "USDT",
+              "multiplier": "1",
+              "identity_basis": "reconstructed",
+              "status": "present",
+              "venue_ts": "2026-11-08T15:59:46.529Z",
+              "received_at": "2026-11-08T15:59:46.666Z",
+              "values": {
+                "oi": "34603.7142000001399"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "evaluated_at": "2026-11-08T17:09:22.417Z",
+  "served_at": "2026-11-08T17:09:22.417000Z",
+  "receipt_id": "4nBgDtwvGVc9z0DG1Q6Cle",
+  "units": "published",
+  "freshness": {
+    "mark": null,
+    "funding": null
+  },
+  "items": [
+    {
+      "instrument": "BTC-PERP",
+      "venue": "BINANCE-USDM",
+      "kind": "perpetual",
+      "venue_symbol": "BTCUSDT",
+      "quote": "USDT",
+      "identity_basis": "reconstructed",
+      "layers": {
+        "mark": {
+          "status": "present",
+          "venue_ts": "2026-11-08T17:09:21Z",
+          "received_at": "2026-11-08T17:09:21.174Z",
+          "age_ms": 1417,
+          "venue_age_ms": 1417,
+          "valid_until": "2026-11-08T17:09:41Z",
+          "horizon_source": "documented",
+          "anchor": "venue",
+          "values": {
+            "mark": "75760.47632609",
+            "index": "75807.34326087",
+            "basis": "-0.0006182374"
+          },
+          "units": {
+            "mark": "quote",
+            "index": "quote",
+            "basis": "fraction"
+          }
+        },
+        "funding": {
+          "status": "present",
+          "venue_ts": "2026-11-08T17:09:21Z",
+          "received_at": "2026-11-08T17:09:21.174Z",
+          "age_ms": 1417,
+          "venue_age_ms": 1417,
+          "valid_until": "2026-11-08T17:11:21Z",
+          "horizon_source": "documented",
+          "anchor": "venue",
+          "values": {
+            "funding": "0.00003004",
+            "funding_short": "-0.00003004",
+            "funding_interval": "8h",
+            "funding_8h": "0.00003004",
+            "funding_short_8h": "-0.00003004",
+            "funding_cap": "0.00300",
+            "funding_floor": "-0.00300",
+            "funding_cap_8h": "0.003",
+            "funding_floor_8h": "-0.003",
+            "funding_at_cap": false,
+            "next_funding_at": "2026-11-09T00:00:00Z"
+          },
+          "units": {
+            "funding": "fraction",
+            "funding_short": "fraction",
+            "funding_8h": "fraction",
+            "funding_short_8h": "fraction",
+            "funding_cap": "fraction",
+            "funding_floor": "fraction",
+            "funding_cap_8h": "fraction",
+            "funding_floor_8h": "fraction"
+          }
+        }
+      }
+    }
+  ],
+  "missing": []
+}
