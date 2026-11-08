@@ -1,0 +1,405 @@
+{
+  "evaluated_at": "2026-11-08T17:18:40.253Z",
+  "served_at": "2026-11-08T17:18:40.253000Z",
+  "receipt_id": "0oK6v98JZehRfOS26icHy7",
+  "as_of": "2026-11-08T17:18:40.253Z",
+  "registry_revision": "2026-11-08T17:18:30.020Z.15cc1a12dde00f7cf1eb41c623d2a0c32017d7dcc3d073b3dd1ac341e67bbd06",
+  "catalogue": "2026-09-22",
+  "units": "published",
+  "items": [
+    {
+      "instrument": "BTC-PERP",
+      "venue": "BINANCE-USDM",
+      "venue_symbol": "BTCUSDT",
+      "identity_basis": "reconstructed",
+      "base": "BTC",
+      "base_venue_alias": null,
+      "quote": "USDT",
+      "kind": "perpetual",
+      "venue_kind": "PERPETUAL",
+      "collection_group": "core",
+      "collected": true,
+      "datasets": {
+        "ticker": {
+          "live": "on",
+          "hot": "—",
+          "cold": "6mo",
+          "publishes": true
+        },
+        "stats": {
+          "live": "on",
+          "hot": "—",
+          "cold": "6mo",
+          "publishes": true
+        },
+        "candle-1m": {
+          "live": "on",
+          "hot": "—",
+          "cold": "1y",
+          "publishes": true
+        },
+        "candle-1m-mark": {
+          "live": "on",
+          "hot": "—",
+          "cold": "1y",
+          "publishes": true
+        },
+        "candle-1m-index": {
+          "live": "on",
+          "hot": "—",
+          "cold": "1y",
+          "publishes": true
+        },
+        "mark": {
+          "live": "on",
+          "hot": "—",
+          "cold": "6mo",
+          "publishes": true
+        },
+        "funding": {
+          "live": "on",
+          "hot": "—",
+          "cold": "2y",
+          "publishes": true
+        },
+        "open-interest": {
+          "live": "on",
+          "hot": "—",
+          "cold": "6mo",
+          "publishes": true
+        },
+        "trade": {
+          "live": "on",
+          "hot": "—",
+          "cold": "1w",
+          "publishes": true
+        },
+        "liquidation": {
+          "live": "on",
+          "hot": "—",
+          "cold": "2y",
+          "publishes": true
+        },
+        "depth-raw": {
+          "live": "on",
+          "hot": "4h",
+          "cold": "—",
+          "publishes": true
+        },
+        "depth-derived": {
+          "live": "on",
+          "hot": "—",
+          "cold": "6mo",
+          "publishes": true
+        },
+        "venue-depth": {
+          "live": "on",
+          "hot": "—",
+          "cold": "6mo",
+          "publishes": false
+        },
+        "book-top": {
+          "live": "on",
+          "hot": "—",
+          "cold": "—",
+          "publishes": true
+        },
+        "instrument": {
+          "live": "on",
+          "hot": "—",
+          "cold": "6mo",
+          "publishes": true
+        }
+      },
+      "pair": "BTCUSDT",
+      "status": "tradeable",
+      "post_only": null,
+      "contract_size": 1,
+      "multiplier": 1,
+      "tick_size": 0.1,
+      "lot_size": 0.001,
+      "min_qty": 0.001,
+      "min_notional": 50,
+      "price_decimals": 2,
+      "qty_decimals": 3,
+      "units": {
+        "tick_size": "quote",
+        "lot_size": "base",
+        "min_qty": "base",
+        "min_notional": "quote"
+      },
+      "funding_interval": "8h",
+      "funding_interval_source": "venue",
+      "funding_normalisation": {
+        "venue_field": "lastFundingRate",
+        "transform": "identity"
+      },
+      "funding_cap": 0.003,
+      "funding_floor": -0.003,
+      "funding_cap_observed_at": "2026-10-13T16:22:17.616Z",
+      "rules_normalisation": {
+        "funding_interval": {
+          "venue_field": "fundingIntervalHours",
+          "transform": "hours_to_duration"
+        },
+        "lot_size": {
+          "venue_field": "filters.LOT_SIZE.stepSize",
+          "transform": "identity"
+        },
+        "min_notional": {
+          "venue_field": "filters.MIN_NOTIONAL.notional",
+          "transform": "identity"
+        },
+        "min_quantity": {
+          "venue_field": "filters.LOT_SIZE.minQty",
+          "transform": "identity"
+        },
+        "price_decimals": {
+          "venue_field": "pricePrecision",
+          "transform": "identity"
+        },
+        "qty_decimals": {
+          "venue_field": "quantityPrecision",
+          "transform": "identity"
+        },
+        "tick_size": {
+          "venue_field": "filters.PRICE_FILTER.tickSize",
+          "transform": "identity"
+        }
+      },
+      "candles": {
+        "base_timeframe": "1m",
+        "price_types": [
+          "trade",
+          "mark",
+          "index"
+        ],
+        "timeframes": [
+          "1m",
+          "5m",
+          "15m",
+          "30m",
+          "1h",
+          "4h",
+          "12h",
+          "1d"
+        ]
+      },
+      "layers": {
+        "ticker": {
+          "policy": "on",
+          "cadence": "live",
+          "history_cadence": "10s",
+          "horizon": {
+            "mode": "on_change",
+            "interval": null,
+            "label": "assumed",
+            "source_time": "publication",
+            "derived_from": null,
+            "effective_from": "2026-09-24T21:03:29Z",
+            "evidence": "WS bookTicker: cadence undocumented, a frame on change; git 1520761; no_update after 5 min: the longest spell without a new value 58 s over 44 listings (BCHUSDC, the least traded at USD 6 million a day, among them), 2026-10-05 to 10-08; twice it is 116 s"
+          }
+        },
+        "mark": {
+          "policy": "on",
+          "cadence": "live",
+          "history_cadence": "10s",
+          "horizon": {
+            "mode": "stream",
+            "interval": "3s",
+            "label": "documented",
+            "source_time": "publication",
+            "derived_from": null,
+            "effective_from": "2026-09-30T18:20:52Z",
+            "evidence": "WS {symbol}@markPrice: every 3 s by default, documented (binance-usdm.md, Mark / Funding), dated by E; was REST every 15 s; git 3703db0"
+          }
+        },
+        "funding": {
+          "policy": "on",
+          "cadence": "live",
+          "history_cadence": "1m",
+          "horizon": {
+            "mode": "stream",
+            "interval": "3s",
+            "label": "documented",
+            "source_time": "publication",
+            "derived_from": null,
+            "effective_from": "2026-09-30T18:20:52Z",
+            "evidence": "the same markPrice frame (r and T), every 3 s, documented, dated by E; was REST every 15 s; git 3703db0"
+          }
+        },
+        "oi": {
+          "policy": "on",
+          "cadence": "300s",
+          "history_cadence": "10s",
+          "horizon": {
+            "mode": "poll",
+            "interval": "300s",
+            "label": "measured",
+            "source_time": "publication",
+            "derived_from": null,
+            "effective_from": "2026-09-24T21:03:29Z",
+            "evidence": "REST openInterest every 300 s; rows 300/301.6 s; git 1520761"
+          }
+        },
+        "book": {
+          "policy": "on",
+          "cadence": "live",
+          "history_cadence": "10s",
+          "horizon": {
+            "mode": "on_change",
+            "interval": null,
+            "label": "assumed",
+            "source_time": "publication",
+            "derived_from": null,
+            "effective_from": "2026-09-24T21:03:29Z",
+            "evidence": "WS bookTicker: cadence undocumented, a frame on change; git 1520761; no_update after 5 min: the longest spell without a new value 58 s over 44 listings (BCHUSDC, the least traded at USD 6 million a day, among them), 2026-10-05 to 10-08; twice it is 116 s"
+          }
+        },
+        "stats": {
+          "policy": "on",
+          "cadence": "live",
+          "history_cadence": "10s",
+          "horizon": {
+            "mode": "stream",
+            "interval": "1s",
+            "label": "documented",
+            "source_time": "publication",
+            "derived_from": null,
+            "effective_from": "2026-09-30T18:20:52Z",
+            "evidence": "WS {symbol}@ticker: every 1000 ms, documented (binance-usdm.md, Stats), dated by E; was REST every 15 s; git 3703db0"
+          }
+        },
+        "candles": {
+          "policy": "on",
+          "cadence": "live",
+          "history_cadence": null
+        },
+        "trade": {
+          "policy": "on",
+          "cadence": "live",
+          "history_cadence": null
+        },
+        "liquidation": {
+          "policy": "on",
+          "cadence": "live",
+          "history_cadence": null
+        },
+        "book_bands": {
+          "policy": "on",
+          "cadence": "live",
+          "history_cadence": "10s",
+          "horizon": {
+            "mode": "stream",
+            "interval": "100ms",
+            "label": "documented",
+            "source_time": "publication",
+            "derived_from": null,
+            "effective_from": "2026-09-24T21:03:29Z",
+            "evidence": "WS depth20@100ms: binance-usdm.md:236-237; git 1520761"
+          }
+        }
+      },
+      "not_published": [],
+      "bands": [
+        "10bps",
+        "25bps",
+        "50bps",
+        "100bps"
+      ],
+      "listed_at": "2019-09-08T17:55:00Z",
+      "first_seen_at": "2026-09-24T21:31:28.076Z",
+      "delisted_at": null,
+      "venue_ts": null,
+      "received_at": "2026-11-08T17:15:44.176Z",
+      "age_ms": 176076,
+      "raw": {
+        "pair": "BTCUSDT",
+        "status": "TRADING",
+        "symbol": "BTCUSDT",
+        "filters": [
+          {
+            "maxPrice": "4529764",
+            "minPrice": "556.80",
+            "tickSize": "0.10",
+            "filterType": "PRICE_FILTER"
+          },
+          {
+            "maxQty": "1000",
+            "minQty": "0.001",
+            "stepSize": "0.001",
+            "filterType": "LOT_SIZE"
+          },
+          {
+            "maxQty": "120",
+            "minQty": "0.001",
+            "stepSize": "0.001",
+            "filterType": "MARKET_LOT_SIZE"
+          },
+          {
+            "limit": 200,
+            "filterType": "MAX_NUM_ORDERS"
+          },
+          {
+            "notional": "50",
+            "filterType": "MIN_NOTIONAL"
+          },
+          {
+            "filterType": "PERCENT_PRICE",
+            "multiplierUp": "1.0300",
+            "multiplierDown": "0.9700",
+            "multiplierDecimal": "4"
+          },
+          {
+            "filterType": "POSITION_RISK_CONTROL",
+            "positionControlSide": "NONE"
+          }
+        ],
+        "baseAsset": "BTC",
+        "orderTypes": [
+          "LIMIT",
+          "MARKET",
+          "STOP",
+          "STOP_MARKET",
+          "TAKE_PROFIT",
+          "TAKE_PROFIT_MARKET",
+          "TRAILING_STOP_MARKET"
+        ],
+        "quoteAsset": "USDT",
+        "marginAsset": "USDT",
+        "onboardDate": 1567965300000,
+        "timeInForce": [
+          "GTC",
+          "IOC",
+          "FOK",
+          "GTX",
+          "GTD"
+        ],
+        "contractType": "PERPETUAL",
+        "deliveryDate": 4133404800000,
+        "liquidationFee": "0.012500",
+        "permissionSets": [
+          "GRID",
+          "COPY",
+          "DCA",
+          "PSB"
+        ],
+        "pricePrecision": 2,
+        "quotePrecision": 8,
+        "triggerProtect": "0.0300",
+        "underlyingType": "COIN",
+        "marketTakeBound": "0.03",
+        "maxMoveOrderLimit": 10000,
+        "quantityPrecision": 3,
+        "underlyingSubType": [
+          "PoW",
+          "Crypto"
+        ],
+        "baseAssetPrecision": 8,
+        "maintMarginPercent": "2.5000",
+        "requiredMarginPercent": "5.0000"
+      }
+    }
+  ],
+  "next_cursor": null
+}
