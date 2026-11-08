@@ -4,7 +4,7 @@ Four synchronous, read-only methods with [CCXT unified structures](https://githu
 
 ## Keep CCXT for orders; swap one line for history
 
-After the owner publishes: `pip install debyko-ccxt`. Before publication: `pip install git+https://github.com/debyko/debyko-ccxt.git@codex/python-readonly`.
+After the owner publishes: `pip install debyko-ccxt`. Before publication: `pip install git+https://github.com/debyko/debyko-ccxt.git@main`.
 
 ```python
 import os
