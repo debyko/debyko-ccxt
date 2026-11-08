@@ -65,8 +65,10 @@ def market(row):
         or row.get("base_venue_alias")
         or row.get("base")
     )
+    base = base.upper() if isinstance(base, str) else None
     base = {"XBT": "BTC"}.get(base, base)
     quote = row.get("quote")
+    quote = quote.upper() if isinstance(quote, str) else None
     settle = raw.get("marginAsset") or raw.get("settleCoin") or raw.get("settleCcy")
     if not settle and row["venue"] in {
         "BINANCE-USDM",
@@ -75,6 +77,7 @@ def market(row):
         "LIGHTER-PERP",
     }:
         settle = quote  # these venues' linear perpetuals settle in their quote unit
+    settle = settle.upper() if isinstance(settle, str) else None
     settle = {"XBT": "BTC"}.get(settle, settle)
     if (
         not base

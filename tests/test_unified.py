@@ -189,6 +189,20 @@ def test_native_quote_and_multiplier_identity_are_preserved(api):
     assert m.market(listing)["symbol"] == "1000PEPE/USDT:USDT"
 
 
+def test_mixed_case_native_currency_uses_ccxt_unified_case(fixture):
+    listing = fixture("instruments")["items"][0]
+    listing.update(
+        venue="HYPERLIQUID",
+        base="PEPE",
+        base_venue_alias="kPEPE",
+        quote="USDC",
+        venue_symbol="kPEPE",
+        raw={},
+    )
+    expected = ccxt.hyperliquid().parse_market({"name": "kPEPE", "szDecimals": 0})
+    assert m.market(listing)["symbol"] == expected["symbol"] == "KPEPE/USDC:USDC"
+
+
 @pytest.mark.parametrize(
     "unit,expected",
     [
